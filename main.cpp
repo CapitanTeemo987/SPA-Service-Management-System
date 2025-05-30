@@ -14,7 +14,7 @@ int main(){
 
 
     if(customService.getDuration() > 60){
-        std::cout << "Note: Duration exceeds 60 minutes. Surcharge applied: $200 \n";
+        std::cout << "\nNote: Duration exceeds 60 minutes. Surcharge applied: $200 \n";
     }
     
     std::cout << "Final price: " << customService.finalPrice(customService.getDuration()) << std::endl;
@@ -26,10 +26,10 @@ int main(){
     std::cout << "Duration: " << customService2.getDuration() << " minutes\n";
     std::cout << "Base Price: " << customService2.finalPrice() << std::endl;
     std::cout << "Time: " << customService2.getTime();
-    std::cout << "Client Type: " << customService2.getStatus();
+    std::cout << "\nClient Type: " << customService2.getStatus();
     
     if(customService2.getStatus() == "returning"){
-        std::cout << "Note: Returning client discount applied: 10%\n";
+        std::cout << "\nNote: Returning client discount applied: 10%\n";
     }
 
     std::cout << "Final Price: " << customService2.finalPrice(customService2.getDuration()) << std::endl;
