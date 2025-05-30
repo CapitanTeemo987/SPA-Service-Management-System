@@ -25,7 +25,5 @@ float CustomService::finalPrice(int duration){
     if (status == "returning"){
         price *= 0.9; 
     }
-    else{
-        return price;
-    }
+    return price;
 }

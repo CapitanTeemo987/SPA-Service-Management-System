@@ -17,7 +17,7 @@ int main(){
         std::cout << "Note: Duration exceeds 60 minutes. Surcharge applied: $200 \n";
     }
     
-    std::cout << "Final price: " << customService.finalPrice() << std::endl;
+    std::cout << "Final price: " << customService.finalPrice(customService.getDuration()) << std::endl;
     std::cout << "Booking Confirmed\n";
 
     std::cout << "=========================================\n";
@@ -32,7 +32,7 @@ int main(){
         std::cout << "Note: Returning client discount applied: 10%\n";
     }
 
-    std::cout << "Final Price: " << customService2.finalPrice() << std::endl;
+    std::cout << "Final Price: " << customService2.finalPrice(customService2.getDuration()) << std::endl;
     std::cout << "Booking Confirmed\n";
 
     return 0;
